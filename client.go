@@ -93,7 +93,7 @@ func NewClient(ctx context.Context, addr string, namespace string, handler inter
 	return NewMergeClient(ctx, addr, namespace, []interface{}{handler}, requestHeader)
 }
 
-func SetUDPHTTPClient(client *http.Client) {
+func SetHttp3Client(client *http.Client) {
 	_defaultHTTPClient = client
 }
 
